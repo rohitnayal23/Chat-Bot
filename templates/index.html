@@ -3,12 +3,27 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>ChatBot</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     </head>
     <body>
-        <h1>Welcome to Chatbot</h1>
-        <p>
-            This page is being created with Flask
-        </p>
+        <div class="app">
+            <header class="app-header">
+                <h1>AI Chat</h1>
+                <p>Powered by Flask</p>
+            </header>
+
+            <main class="chat-window">
+                <div class="message bot">
+                    Hello! I'm your AI Assistant.
+                </div>
+            </main>
+
+            <footer class="chat-input">
+                <input type="text" placeholder="Type your message..."/>
+                <button>Send</button>
+            </footer>
+
+        </div>
     </body>
 </html>
